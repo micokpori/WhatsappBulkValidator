@@ -5,80 +5,216 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - WhatsApp Checker</title>
     <style>
-        body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
+        * {
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
         .container {
             max-width: 800px;
-            margin: auto;
-            padding: 20px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        h1 {
+
+        .privacy-header {
             text-align: center;
+            background: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
         }
+
+        .privacy-header h1 {
+            font-size: 2.5em;
+            color: #2d3436;
+            margin-bottom: 16px;
+        }
+
+        .last-updated {
+            color: #636e72;
+            font-style: italic;
+            font-size: 0.9em;
+        }
+
+        .privacy-content {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+        }
+
+        .toc {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: #0984e3;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .toc a:hover {
+            color: #074e81;
+        }
+
+        h2 {
+            color: #2d3436;
+            font-size: 1.5em;
+            margin: 40px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f1f2f6;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
         p {
-            margin-bottom: 15px;
+            margin-bottom: 1.2em;
+            color: #4a4a4a;
         }
+
         ul {
             margin: 20px 0;
             padding-left: 20px;
         }
+
         li {
-            margin-bottom: 10px;
+            margin-bottom: 16px;
+            color: #4a4a4a;
+        }
+
+        strong {
+            color: #2d3436;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .highlight-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #0984e3;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .contact-info strong {
+            color: #0984e3;
+        }
+
+        .privacy-badge {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #0984e3;
+            padding: 4px 12px;
+            border-radius: 16px;
+            font-size: 0.9em;
+            margin-top: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 10px;
+            }
+
+            .privacy-content {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Privacy Policy</h1>
-        <p class="last-updated">Last Updated: 31-Dec-2024</p>
-        <p>Welcome to <strong>WhatsApp Checker</strong>. Your privacy is important to us. This Privacy Policy explains how we handle your data when you use our app.</p>
+        <div class="privacy-header">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: 31-Dec-2024</p>
+            <span class="privacy-badge">Your Privacy is Our Priority</span>
+        </div>
 
-        <h2>1. Data We Access</h2>
-        <p>The app uses the AccessibilityService API to perform its primary function of checking if a phone number is registered on WhatsApp. Through this API, the app accesses:</p>
-        <ul>
-            <li><strong>Screen Content:</strong> To read and interpret relevant WhatsApp interface information.</li>
-            <li><strong>UI Elements:</strong> To interact with specific components of WhatsApp, such as search fields and results.</li>
-        </ul>
+        <div class="privacy-content">
+            <div class="toc">
+                <h2>Table of Contents</h2>
+                <ul>
+                    <li><a href="#introduction">1. Introduction</a></li>
+                    <li><a href="#data-access">2. Data Accessed</a></li>
+                    <li><a href="#data-use">3. How We Use Data</a></li>
+                    <li><a href="#data-sharing">4. Data Sharing</a></li>
+                    <li><a href="#security">5. Data Security</a></li>
+                    <li><a href="#changes">6. Changes to This Privacy Policy</a></li>
+                    <li><a href="#contact">7. Contact Us</a></li>
+                </ul>
+            </div>
 
-        <h2>2. How We Use the Data</h2>
-        <p>All data accessed via the AccessibilityService API is used exclusively for the following purposes:</p>
-        <ul>
-            <li>To check whether a phone number is registered on WhatsApp.</li>
-            <li>To perform this functionality in real-time, locally on your device.</li>
-        </ul>
-        <p>The app does not store or retain any data after the check is complete.</p>
+            <h2 id="introduction">1. Introduction</h2>
+            <div class="highlight-box">
+                <p>This Privacy Policy outlines how we handle your information when you use <strong>WhatsApp Checker</strong>. The app’s primary functionality relies on the AccessibilityService API, but no user data is collected, stored, or shared.</p>
+            </div>
 
-        <h2>3. Data Sharing</h2>
-        <p><strong>No data is shared or transmitted to external servers, third parties, or other applications.</strong> All operations are performed locally on your device, ensuring that your information remains private and secure.</p>
+            <h2 id="data-access">2. Data Accessed</h2>
+            <ul>
+                <li><strong>Screen Content:</strong> Accessed to identify relevant WhatsApp interface elements.</li>
+                <li><strong>UI Elements:</strong> Used for automated interactions necessary for functionality.</li>
+            </ul>
 
-        <h2>4. Permissions</h2>
-        <p>The app requires certain permissions to function, including:</p>
-        <ul>
-            <li>Accessibility Service: To perform the number-checking functionality within WhatsApp.</li>
-        </ul>
-        <p>You must explicitly enable these permissions for the app to function. You can disable permissions at any time through your device settings.</p>
+            <h2 id="data-use">3. How We Use Data</h2>
+            <p>All accessed data is used solely for:</p>
+            <ul>
+                <li>Determining if a phone number is registered on WhatsApp.</li>
+                <li>Performing app functionalities locally on your device.</li>
+            </ul>
 
-        <h2>5. Security</h2>
-        <p>We are committed to ensuring that your data is secure. The app operates entirely on your device, and no data is transmitted to external servers or stored anywhere.</p>
+            <h2 id="data-sharing">4. Data Sharing</h2>
+            <p><strong>No data is shared or transmitted externally.</strong> All operations are performed locally on your device.</p>
 
-        <h2>6. Your Consent</h2>
-        <p>By using this app and enabling the required permissions, you consent to the use of the AccessibilityService API as described in this Privacy Policy.</p>
+            <h2 id="security">5. Data Security</h2>
+            <p>The app operates offline and ensures no data is stored, transmitted, or exposed to external threats.</p>
 
-        <h2>7. Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time to reflect changes in legal requirements or app functionality. We encourage you to review this page periodically to stay informed about how we protect your privacy.</p>
+            <h2 id="changes">6. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy periodically. Continued use of the app signifies acceptance of any changes.</p>
 
-        <h2>8. Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy or how your data is handled, please contact us at:</p>
-        <p><strong>Email:</strong> okporiakumiracle@gmail.com</p>
+            <h2 id="contact">7. Contact Us</h2>
+            <div class="contact-info">
+                <p>If you have questions or concerns, contact us at:</p>
+                <p><strong>Email:</strong> okporiakumiracle@gmail.com</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
