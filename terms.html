@@ -3,134 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms and Conditions - WhatsApp Checker</title>
+    <title>Terms and Conditions - WhatsApp Contact Checker</title>
     <style>
-        /* Basic Styling */
-        body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
+        * {
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
         .container {
             max-width: 800px;
-            margin: auto;
-            padding: 20px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        h1 {
+
+        .terms-header {
             text-align: center;
+            background: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
         }
+
+        h1 {
+            font-size: 2.5em;
+            color: #2d3436;
+            margin-bottom: 16px;
+        }
+
+        .last-updated {
+            color: #636e72;
+            font-style: italic;
+            font-size: 0.9em;
+        }
+
+        .terms-content {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+        }
+
+        .toc {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: #0984e3;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .toc a:hover {
+            color: #074e81;
+        }
+
+        h2 {
+            color: #2d3436;
+            font-size: 1.5em;
+            margin: 40px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f1f2f6;
+        }
+
         p {
-            margin-bottom: 15px;
+            margin-bottom: 1.2em;
+            color: #4a4a4a;
         }
+
         ul {
             margin: 20px 0;
             padding-left: 20px;
         }
+
         li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            color: #4a4a4a;
         }
-        .toc {
-            background: #ecf0f1;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 20px;
+
+        .section-highlight {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #0984e3;
         }
-        .toc a {
-            text-decoration: none;
-            color: #3498db;
-        }
-        .toc a:hover {
-            text-decoration: underline;
-        }
-        .section {
-            margin-bottom: 40px;
+
+        .warning-box {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Terms and Conditions</h1>
-        <p class="last-updated">Last Updated: 31-Dec-2024</p>
-        <div class="toc">
-            <h2>Table of Contents</h2>
+        <div class="terms-header">
+            <h1>Terms and Conditions</h1>
+            <p class="last-updated">Last Updated: January 1, 2025</p>
+        </div>
+
+        <div class="terms-content">
+            <div class="toc">
+                <h2>Table of Contents</h2>
+                <ul>
+                    <li><a href="#introduction">1. Introduction</a></li>
+                    <li><a href="#services">2. Services Description</a></li>
+                    <li><a href="#permissions">3. App Permissions</a></li>
+                    <li><a href="#whatsapp">4. WhatsApp Usage</a></li>
+                    <li><a href="#limitations">5. Service Limitations</a></li>
+                    <li><a href="#acceptable">6. Acceptable Use</a></li>
+                    <li><a href="#privacy">7. Privacy and Data</a></li>
+                    <li><a href="#disclaimer">8. Disclaimers</a></li>
+                    <li><a href="#liability">9. Limitation of Liability</a></li>
+                    <li><a href="#changes">10. Changes to Terms</a></li>
+                    <li><a href="#termination">11. Termination</a></li>
+                    <li><a href="#contact">12. Contact Information</a></li>
+                </ul>
+            </div>
+
+            <h2 id="introduction">1. Introduction</h2>
+            <p>These Terms and Conditions govern your use of the WhatsApp Contact Checker app ("the App"). By using the App, you agree to these terms in full. If you disagree with any part of these terms, you must not use the App.</p>
+
+            <h2 id="services">2. Services Description</h2>
+            <div class="section-highlight">
+                <p>The App provides the following services:</p>
+                <ul>
+                    <li>Checking if phone numbers are registered on WhatsApp</li>
+                    <li>Using accessibility services to automate the checking process</li>
+                    <li>Local processing of number verification</li>
+                </ul>
+            </div>
+
+            <h2 id="permissions">3. App Permissions</h2>
+            <div class="section-highlight">
+                <p>The App requires:</p>
+                <ul>
+                    <li><strong>Accessibility Service Permission:</strong> Required to automate the WhatsApp number checking process</li>
+                    <li><strong>WhatsApp Installation:</strong> The App requires WhatsApp to be installed and configured on your device</li>
+                </ul>
+            </div>
+
+            <h2 id="whatsapp">4. WhatsApp Usage</h2>
+            <div class="warning-box">
+                <p>Important notes about WhatsApp usage:</p>
+                <ul>
+                    <li>This App is not affiliated with, authorized, maintained, or endorsed by WhatsApp Inc.</li>
+                    <li>You must comply with WhatsApp's Terms of Service while using this App</li>
+                    <li>The App does not store, collect, or transmit any WhatsApp user data</li>
+                </ul>
+            </div>
+
+            <h2 id="limitations">5. Service Limitations</h2>
+            <p>You acknowledge that:</p>
             <ul>
-                <li><a href="#introduction">1. Introduction</a></li>
-                <li><a href="#description">2. Description of the App</a></li>
-                <li><a href="#accessibility">3. Use of Accessibility Features</a></li>
-                <li><a href="#permissions">4. Permissions</a></li>
-                <li><a href="#user-data">5. User Data and Privacy</a></li>
-                <li><a href="#warranty">6. Disclaimer of Warranties</a></li>
-                <li><a href="#liability">7. Limitation of Liability</a></li>
-                <li><a href="#termination">8. Termination</a></li>
-                <li><a href="#modifications">9. Modifications</a></li>
-                <li><a href="#law">10. Governing Law</a></li>
-                <li><a href="#contact">11. Contact Us</a></li>
+                <li>The App's functionality depends on WhatsApp's availability and policies</li>
+                <li>We cannot guarantee 100% accuracy of number verification results</li>
+                <li>The service may be affected by changes to WhatsApp's interface or policies</li>
             </ul>
-        </div>
 
-        <div class="section" id="introduction">
-            <h2>1. Introduction</h2>
-            <p>Welcome to <strong>WhatsApp Checker</strong> (the "App"). By downloading or using the App, you agree to these Terms and Conditions ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
-        </div>
-
-        <div class="section" id="description">
-            <h2>2. Description of the App</h2>
-            <p>This App uses Android's accessibility features to help users determine whether a phone number is associated with a WhatsApp account. The App operates locally on your device and does not collect or transmit your data to external servers.</p>
-        </div>
-
-        <div class="section" id="accessibility">
-            <h2>3. Use of Accessibility Features</h2>
-            <p>The App utilizes Android's Accessibility Service solely to interact with WhatsApp's user interface for the purpose of verifying if a number is registered on WhatsApp. By enabling this service, you acknowledge and consent to its functionality.</p>
-        </div>
-
-        <div class="section" id="permissions">
-            <h2>4. Permissions</h2>
-            <p>The App may require certain permissions, such as:</p>
+            <h2 id="acceptable">6. Acceptable Use</h2>
+            <p>You agree not to:</p>
             <ul>
-                <li>Accessibility Service to perform automated checks within WhatsApp.</li>
-                <li>Internet access for updates and notifications.</li>
+                <li>Use the App for spam or harassment</li>
+                <li>Attempt to bypass any limitations or restrictions</li>
+                <li>Use the App in any way that violates WhatsApp's terms of service</li>
+                <li>Redistribute or sell any data obtained through the App</li>
             </ul>
-        </div>
 
-        <div class="section" id="user-data">
-            <h2>5. User Data and Privacy</h2>
-            <p>The App does not collect, store, or share any personal information. All operations are performed locally on your device.</p>
-        </div>
+            <h2 id="privacy">7. Privacy and Data</h2>
+            <p>The App:</p>
+            <ul>
+                <li>Processes all data locally on your device</li>
+                <li>Does not collect or store personal information</li>
+                <li>Does not transmit data to external servers</li>
+            </ul>
 
-        <div class="section" id="warranty">
-            <h2>6. Disclaimer of Warranties</h2>
-            <p>The App is provided "as is" without warranties of any kind, express or implied, including but not limited to fitness for a particular purpose or non-infringement. We do not guarantee uninterrupted or error-free operation.</p>
-        </div>
+            <h2 id="disclaimer">8. Disclaimers</h2>
+            <p>The App is provided "as is" without any warranties. We do not guarantee:</p>
+            <ul>
+                <li>Continuous availability of the service</li>
+                <li>Compatibility with all Android versions or devices</li>
+                <li>Accuracy of WhatsApp number verification results</li>
+            </ul>
 
-        <div class="section" id="liability">
-            <h2>7. Limitation of Liability</h2>
-            <p>We are not liable for any damages arising from the use or inability to use the App, including any incidental, consequential, or indirect damages.</p>
-        </div>
+            <h2 id="liability">9. Limitation of Liability</h2>
+            <p>We shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use the App.</p>
 
-        <div class="section" id="termination">
-            <h2>8. Termination</h2>
-            <p>We reserve the right to terminate access to the App at any time without notice if these Terms are violated.</p>
-        </div>
+            <h2 id="changes">10. Changes to Terms</h2>
+            <p>We reserve the right to modify these terms at any time. Continued use of the App after changes constitutes acceptance of modified terms.</p>
 
-        <div class="section" id="modifications">
-            <h2>9. Modifications</h2>
-            <p>We may update these Terms from time to time. Continued use of the App after updates indicates acceptance of the revised Terms.</p>
-        </div>
+            <h2 id="termination">11. Termination</h2>
+            <p>We reserve the right to terminate or suspend access to the App at any time, without prior notice or liability, for any reason.</p>
 
-        <div class="section" id="law">
-            <h2>10. Governing Law</h2>
-            <p>These Terms are governed by the laws of the Federal Republic of Nigeria.</p>
-        </div>
-
-        <div class="section" id="contact">
-            <h2>11. Contact Us</h2>
-            <p>If you have any questions about these Terms, please contact us at <strong>okporiakumiracle@gmail.com</strong>.</p>
+            <h2 id="contact">12. Contact Information</h2>
+            <div class="section-highlight">
+                <p>For questions about these Terms, contact us at:</p>
+                <p><strong>Email:</strong> [Your Contact Email]</p>
+            </div>
         </div>
     </div>
 </body>
